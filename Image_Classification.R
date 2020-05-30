@@ -43,7 +43,7 @@ model <- keras_model_sequential() %>%
   layer_max_pooling_2d(pool_size = c(2, 2)) %>%
   layer_flatten() %>%
   layer_dense(units = 128, activation = "relu") %>%
-  layer_dense(units = 1, activation = "sigmoid")
+  layer_dense(units = 1, activation = "softmax")
 
 model
 
